@@ -1,0 +1,7 @@
+server:
+  port: 7070
+spring:
+  data:
+    mongodb:
+      uri: mongodb://product_user:product_user@ds129333.mlab.com:29333/uws_products_db
+      

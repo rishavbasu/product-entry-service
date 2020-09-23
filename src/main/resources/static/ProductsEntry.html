@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+	<form action="/products" method="post" enctype="multipart/form-data">
+		<tr>
+			<td>Description <input name="products[0].description" value="" /></td>
+			<td><input type="file" name="products[0].image" value="" /></td>
+		</tr>
+		<br>
+		<tr>
+			<td>Description <input name="products[1].description" value="" /></td>
+			<td><input type="file" name="products[1].image" value="" /></td>
+		</tr>
+		<br>
+		<input type="submit" />
+	</form>
+</body>
+</html>

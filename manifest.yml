@@ -1,0 +1,6 @@
+---
+applications:
+- name: springcloud
+  memory: 256M
+  host: rishav
+  domain: cfapps.io
