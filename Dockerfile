@@ -33,4 +33,6 @@ FROM adoptopenjdk/openjdk8:ubi-jre
 RUN mkdir /opt/app
 COPY --from=builder /app/target/product-entry-service-0.0.1-SNAPSHOT.jar /opt/app/product-entry-service-0.0.1-SNAPSHOT.jar
 
+EXPOSE 9080/tcp
+
 ENTRYPOINT [ "sh", "-c", "java -jar /opt/app/product-entry-service-0.0.1-SNAPSHOT.jar" ]
